@@ -1,0 +1,229 @@
+/* Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+Blue: hsl(248, 32%, 49%)
+Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+font-family: 'Poppins', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+.left{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ main{
+    margin:12%;
+    display: flex;
+ }
+ .title{
+    color: hsl(240, 22%, 96%) ;
+    font-size: 20px ;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 300px;
+ }
+ .text{
+    font-size: 10px;
+    font-weight: 300;
+    color: hsl(240, 22%, 96%) ;
+    width: 300px;
+ }
+
+ .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .trial{
+    margin: 20px;
+ }
+ .trial-btn{
+    width: 322px;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color:hsl(248, 32%, 49%) ;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    box-shadow: 0px 6px 0px 0px #74575761;
+ }
+  .email-msg , .password-msg{
+   font-size:8px;
+   color: red;
+ }
+.submit-msg{
+   font-size: 8px;
+   color: rgb(14, 238, 14);
+   font-weight: bold;
+}
+ .trial-btn span{
+    color:hsl(246, 25%, 77%) ;
+ }
+ .fields{
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px #74575761 ;
+
+}
+ ::placeholder{
+    color:hsl(249, 10%, 26%) ;
+}
+input , .claim-btn {
+  width: 280px;
+  margin-bottom:12px;
+  padding: 11px;
+  border-radius: 5px;
+  border: 0.01px solid hsl(245, 23%, 89%);
+  font-size: 9px;
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+.claim-btn{
+    border: none;
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    box-shadow:1px 2px  hsl(154, 34%, 43%) ;
+ }
+ .footer{
+    font-size: 7px;
+    padding: 5px;
+ }
+
+ .footer a{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+ @media(max-width: 750px){
+
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        background-color:hsl(0, 100%, 74%);
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .left{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .title{ 
+    text-align: center;
+     }
+     .text{
+        text-align: center;
+        font-size: 15px;
+     }
+     .trial-btn{
+        width: 230px;
+        padding: 28px;
+        font-size: 16px;
+     }
+     .fields{
+        box-shadow: 0px 8px #74575761 ;
+        margin-bottom: 20px;
+     }
+     input , .claim-btn {
+        width: 190px;
+        margin-bottom:11px;
+        padding: 16px;
+        font-size: 9px;
+        font-weight: bold;
+        padding-left: 18px;
+      }
+      
+      .claim-btn{
+          border: none;
+          color: #fff;
+          background-color: hsl(154, 59%, 51%);
+          text-transform: uppercase;
+          font-size: 9px;
+          letter-spacing: 1.2px;
+          box-shadow:1px 2px  hsl(154, 34%, 43%) ;
+       }
+       .footer{
+          width: 190px;
+          font-size: 8px;
+          padding: 5px;
+       }
+     
+ }
+
+ @media(min-width:160px) and (max-width:350px){
+    .title{
+        font-size: 10px ;
+        width: 130px;
+     }
+     .text{
+        font-size: 10px;
+        font-weight: 300;
+        color: hsl(240, 22%, 96%) ;
+        width: 150px;
+     }
+     .trial-btn{
+        width: 150px;
+        padding: 10px;
+        font-size: 10px;
+     }
+     
+     input , .claim-btn {
+        width: 110px;
+        margin-bottom:11px;
+        padding: 16px;
+        font-size: 9px;
+        font-weight: bold;
+        padding-left: 18px;
+      }
+       .footer{
+          width: 110px;
+          font-size: 8px;
+          padding: 5px;
+       }
+     
+ }
+ 
